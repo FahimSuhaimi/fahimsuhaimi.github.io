@@ -1,0 +1,524 @@
+/* =========================================================
+   FAHIM SUHAIMI — PORTFOLIO WEBSITE STYLES
+   ========================================================= */
+
+@font-face {
+  font-family: 'Kajiro';
+  src: url('../fonts/Kajiro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Pembolehubah Warna & Font */
+:root {
+  --red: #ab1509;
+  --cream: #fffbe2;
+  --font-heading: "Kajiro", "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+/* Reset Elemen */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: #1a1a1a;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding-top: 70px;
+  /* Menghalang kandungan daripada bertindih di bawah navbar fixed */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 80px 24px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Gaya Tajuk */
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cream);
+  border-bottom: 2px solid var(--red);
+  z-index: 1000;
+  padding: 16px 24px;
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--red);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--red);
+}
+
+/* Dropdown Menu untuk Projects */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--cream);
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  min-width: 260px;
+  display: none;
+  padding: 8px 0;
+  margin-top: 0;
+  /* Diberi nilai 0 agar tidak ada celah kosong yang memutus hover */
+  z-index: 1001;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #1a1a1a;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--red);
+  color: var(--cream);
+}
+
+/* Tunjukkan dropdown apabila tetikus diletakkan (hover) */
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background-color: var(--cream);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-label {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: var(--red);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 10rem;
+  font-weight: normal;
+  color: var(--red);
+  line-height: 0.95;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.hero-title .accent {
+  color: #111;
+}
+
+.hero-contact-btn {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--cream);
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-contact-btn:hover {
+  background-color: #8c1006;
+  transform: translateY(-2px);
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.profile-photo-hero {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid var(--red);
+  background-image: url('../images/hero/profile-picture.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero-year {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.hero-credit {
+  margin-top: 24px;
+  font-size: 0.9rem;
+}
+
+.hero-credit .studio {
+  font-family: var(--font-heading);
+  color: var(--red);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ---------- ABOUT / RESUME ---------- */
+.about {
+  background-color: var(--cream);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px 48px;
+  /* 24px jarak antara baris, 48px jarak antara kolum */
+  align-items: start;
+  /* Memastikan setiap tajuk bermula selari dari atas */
+}
+
+/* Garisan pemisah merentasi kedua-dua kolum */
+.grid-span {
+  grid-column: 1 / -1;
+  margin: 12px 0;
+}
+
+.profile-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--red);
+  aspect-ratio: 3 / 4;
+}
+
+.about h2 {
+  color: var(--red);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid var(--red);
+  margin: 32px 0;
+}
+
+.info-block {
+  margin-bottom: 8px;
+}
+
+.info-block strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.info-block .date {
+  float: right;
+  font-weight: 600;
+}
+
+.info-block ul {
+  margin: 10px 0 0 20px;
+}
+
+.contact-list,
+.lang-list {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.contact-list li,
+.lang-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-heading {
+  color: var(--red);
+  font-size: 4rem;
+  margin: 0 0 8px 0;
+  /* Margin atas dibuang supaya selari dengan tajuk kanan */
+}
+
+.skills-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.skills-icons span {
+  background: #222;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* ---------- PROJECT SECTIONS ---------- */
+.project-cover {
+  background-color: var(--red);
+  color: var(--cream);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.project-cover h2 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  color: var(--cream);
+}
+
+.project {
+  background-color: var(--cream);
+}
+
+.project img {
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.project-text {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: left;
+}
+
+.project-text h3 {
+  color: var(--red);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.project-text .meta {
+  margin-bottom: 16px;
+}
+
+.project-text .meta strong {
+  color: var(--red);
+}
+
+.caption {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.quote-block {
+  background: rgba(171, 21, 9, 0.05);
+  border-left: 4px solid var(--red);
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-style: italic;
+}
+
+/* ---------- IDENTITY / BRANDING PROJECTS ---------- */
+.identity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.identity-card h3 {
+  color: var(--red);
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+/* ---------- THANKS / CONTACT ---------- */
+.thanks {
+  background-color: var(--cream);
+  text-align: center;
+  padding: 100px 24px;
+}
+
+.connect {
+  background-color: var(--cream);
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.connect h2 {
+  color: var(--red);
+  margin-bottom: 20px;
+}
+
+.qr-block {
+  text-align: center;
+}
+
+.qr-block img {
+  max-width: 220px;
+  margin: 0 auto 12px auto;
+  border: 4px solid var(--red);
+  border-radius: 12px;
+}
+
+.qr-label {
+  color: var(--red);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ---------- FLOATING QUICK-EMAIL CHAT BUTTON (FAB) ---------- */
+.chat-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--red);
+  color: var(--cream);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.chat-fab:hover {
+  transform: scale(1.1);
+  background-color: #8c1006;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .about-grid,
+  .identity-grid,
+  .connect-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 56px 20px;
+  }
+}

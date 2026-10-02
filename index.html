@@ -1,36 +1,333 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Fahim Suhaimi</title>
-        <style>
-            body {
-                background-color: rgb(150, 150, 150);
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;}
+<html lang="en">
 
-            h1 {
-                color: rgb(20, 108, 180);
-                background-color: black;
-                opacity: 1;}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahim Suhaimi — Graphic Designer Portfolio</title>
 
-            h2 {
-                color:green}
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-            button {
-                background-color: grey;
-                border: none;
-                color: white;}
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-        </style>
-    </head>
-    <body>
-        <h1>Welcome to my Portfolio 25 <br>by Fahim Suhaimi</br></h1>
-        <h2>About me</h2>
-        <p>Hi there! I'm a passionate graphic designer with hands-on experience creating posters, banners, and marketing materials. love bringing ideas to life through clean eye-catching designs that deliver real impact.
-        Although I'm new to this field, I've completed various freelance projects locally and am confident in delivering quality work with a fast turnaround. l'm detail-oriented, easy to communicate with, and always committed to making sure my clients are happy with the final result.
-        If you're looking for creative, reliable design support let's work together!</p>
+<body>
 
-        <button>Click Here</button>
-    </body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#home" class="nav-logo">FAHIM SUHAIMI</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li class="nav-dropdown">
+          <a href="#projects" class="dropdown-toggle">Project ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#projects">Islamic Art &amp; Publishing</a></li>
+            <li><a href="#visual-identity">Visual Identity</a></li>
+            <li><a href="#social-media">Social Media &amp; Marketing Visual</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO / HOME ========== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-flex">
+        <div class="hero-text">
+          <p class="hero-label">Hi there, im Fahim Suhaimi. A multi-role designer</p>
+          <h1 class="hero-title">PORT<span class="accent">F</span>OLIO 2026</h1>
+          <a href="#contact" class="hero-contact-btn">Contact Me</a>
+        </div>
+        <div class="hero-photo">
+          <div class="profile-photo-hero"></div>
+        </div>
+      </div>
+      <div class="hero-footer">
+
+      </div>
+  </section>
+
+  <!-- ========== ABOUT / RESUME ========== -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+
+      <!-- LEFT SIDEBAR -->
+      <div>
+        <div class="profile-photo"></div>
+
+        <h3 class="sidebar-heading">Contact</h3>
+        <ul class="contact-list">
+          <li>fhmxvisuals@gmail.com</li>
+          <li>behance.net/fahimsuhaimi</li>
+          <li>linkedin.com/in/fahim-suhaimi</li>
+        </ul>
+
+        <div id="skills">
+          <h3 class="sidebar-heading">Skills</h3>
+          <div class="skills-icons">
+            <span>Ai</span>
+            <span>Ps</span>
+            <span>Id</span>
+            <span>Pr</span>
+          </div>
+        </div>
+
+        <h3 class="sidebar-heading">Languages</h3>
+        <ul class="lang-list">
+          <li><strong>Malay</strong> — Native</li>
+          <li><strong>English</strong> — Upper-Intermediate B2</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div>
+        <h2>About Me</h2>
+        <p>I'm an ingenious designer with a strong eye for visual storytelling. Believes in working smart to deliver
+          high-quality designs on time. Experienced in branding, print, and social media visuals.</p>
+        <p>Skilled in event and exhibition support, balancing creativity with efficiency. Passionate about producing
+          impactful work while maintaining productive workflows.</p>
+
+        <hr class="divider">
+
+        <h2>Education</h2>
+        <div class="info-block">
+          <span class="date">2021 - 2024</span>
+          <strong>KOLEJ PROFESIONAL MARA INDERA MAHKOTA (KPMIM)</strong>
+          Diploma in Creative Digital Media Production
+          <ul>
+            <li>Relevant coursework: Graphic Design, Digital Media Production, Typography &amp; Layout, Motion Graphics,
+              Photography &amp; Editing, Video Editing &amp; Post-Production, Interactive Media, Branding, Project
+              Management</li>
+            <li><em>Anugerah Graduan Cemerlang</em> MARA (AGC) / Best Student Award</li>
+            <li>CGPA: 3.96</li>
+            <li>MUET: BAND 4.0</li>
+          </ul>
+        </div>
+
+        <hr class="divider">
+
+        <h2 id="experience">Experiences</h2>
+        <div class="info-block">
+          <span class="date">2026 - Present</span>
+          <strong>CUBIXI WORLDWIDE, SELANGOR</strong>
+          Content Creative &amp; Visual Marketer
+          <ul>
+            <li>Platform Content Creation: Developed and curated engaging digital content for the MySiswaPlace (MSP)
+              platform, specifically driving public awareness and engagement for the Baucar Buku MADANI (BBM)
+              initiative.</li>
+            <li>Social Media Management: Managed daily scheduling, publishing, and channel performance across all
+              official social media networks to build online community presence.</li>
+            <li>Merchandise Development: Conceptualized and designed official promotional merchandise items tailored to
+              the MySiswaPlace (MSP) brand identity.</li>
+            <li>Marketing Collateral & Print Design: Created high-impact visual layouts for physical and digital media,
+              including large-format banners, buntings, and optimized static screen advertisements.</li>
+            <li>Campaign Collaboration: Partnered closely with the marketing team to execute strategic promotional
+              campaigns, specifically driving user outreach and redemption efforts for the BBM26 campaign.</li>
+          </ul>
+
+          <ul>
+          </ul>
+
+          <span class="date">2023 - 2026</span>
+          <strong>YAYASAN RESTU SHAH ALAM, SELANGOR</strong>
+          Graphic Designer &amp; Sales Support
+          <ul>
+            <li>Designed printed materials including book covers for religious publications (Yasin, Quran, and Islamic
+              books) as well as promotional items such as flyers and brochures.</li>
+            <li>Designed promotional posters and visual materials for retail products and sales campaigns.</li>
+            <li>Assisted at the sales counter by handling customer inquiries and supporting direct sales activities.
+            </li>
+            <li>Supported the team during external events and exhibitions by helping with booth setup, customer
+              engagement, and sharing information about the organization's work and products.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 1: ISLAMIC ART & PUBLISHING ========== -->
+  <section class="project-cover" id="projects">
+    <h2>Islamic Art &amp; Publishing Design<br>Surah Yasin &amp; The Holy Qur'an</h2>
+  </section>
+
+  <section class="project">
+    <div class="section-inner">
+      <div class="project-text">
+        <h3>Project Overview</h3>
+        <p class="meta">
+          <strong>Project Title:</strong> Official Surah Yasin &amp; Tahlil Special Edition: Perak State Merdeka
+          Celebration<br>
+          <strong>Client:</strong> Jabatan Agama Islam Perak (JAIP) / Perak State Government<br>
+          <strong>Category:</strong> Editorial &amp; Government Publication Design
+        </p>
+        <p>Commissioned by the Jabatan Agama Islam Perak (JAIP), this special edition Surah Yasin, Tahlil, and Doa
+          booklet was custom-designed for the Perak State-Level National Day (Hari Kebangsaan) celebration. The design
+          harmoniously bridges sacred Islamic literature with national identity.</p>
+      </div>
+      <img src="images/projects/islamic-art-publishing/cover-mockup.png"
+        alt="Surah Yasin Tahlil booklet cover design for JAIP">
+
+      <div class="project-text">
+        <div class="quote-block">
+          The front cover features a dynamic, fluid integration of the Jalur Gemilang (Malaysian flag), wrapping
+          elegantly around the central Arabic calligraphy. It symbolizes unity, faith, and patriotism, tailored
+          specifically for the 2024/1446H state-level independence commemorations.
+        </div>
+        <div class="quote-block">
+          The back cover maintains a clean, minimalist corporate identity for the Perak State Government (Kerajaan
+          Negeri Perak Darul Ridzuan). It features the official state emblem alongside institutional contact details,
+          ensuring a highly professional and authoritative finish suitable for state dignitaries and the public.
+        </div>
+      </div>
+      <img src="images/projects/islamic-art-publishing/interior-layout.png" alt="Yasin Hari Kebangsaan interior layout">
+      <p class="caption">Interior layout featuring a vibrant, custom ornamental border that frames the sacred text
+        beautifully. The design incorporates a color-coded Tajweed guide at the footer, blending rich Islamic aesthetics
+        with high functional readability.</p>
+
+      <img src="images/projects/islamic-art-publishing/cover-variations.png"
+        alt="Showcase of diverse Surah Yasin cover concepts">
+      <p class="caption">A curated showcase of diverse Surah Yasin cover concepts, ranging from rich cultural heritages
+        to modern state government editions. Each design explores a unique blend of custom Islamic geometry, fluid
+        calligraphy arrangement, and tailored color palettes.</p>
+    </div>
+  </section>
+
+  <!-- PROJECT 2: AL-QURAN NZR SUPREME -->
+  <section class="project">
+    <div class="section-inner">
+      <div class="project-text">
+        <h3>Project Overview</h3>
+        <p class="meta">
+          <strong>Project Title:</strong> Bespoke Al-Quran Cover: Contemporary Geometric Edition<br>
+          <strong>Client:</strong> NZR SUPREME SDN.BHD<br>
+          <strong>Category:</strong> Luxury Booksmithing &amp; Editorial Design
+        </p>
+        <p>A custom-commissioned Al-Quran cover design that reinterprets traditional Islamic art through a contemporary
+          lens. Featuring a dynamic, multi-layered geometric vortex motif in varying shades of blue, this bespoke
+          edition balances sacred geometry with modern, clean editorial aesthetics.</p>
+      </div>
+      <img src="images/projects/al-quran-nzr/cover-mockup.png" alt="Al-Quran cover for NZR Supreme">
+
+      <div class="project-text">
+        <div class="quote-block">
+          The front cover and spine utilize an intricate radial pattern that draws the eye toward the central Arabic
+          typography. This structure is specifically optimized for premium print finishes, allowing for seamless
+          integration of gold foil hot-stamping and textured paper materials.
+        </div>
+        <div class="quote-block">
+          A minimalist layout approach on a crisp white backdrop ensures the complex ornamental artwork remains the
+          focal point. The design offers an elevated, premium feel suitable for exclusive gifting or high-end
+          institutional publication.
+        </div>
+      </div>
+      <img src="images/projects/al-quran-nzr/interior-and-specs.png" alt="Al-Quran interior layout and specifications">
+      <p class="caption">The contemporary geometric framework and interior elements. Every line and vector in the radial
+        motif is mathematically aligned to create an intricate sense of depth, tailored perfectly for luxury debossing
+        and tactile print finishes.</p>
+
+      <div class="project-text" style="margin-top:32px;">
+        <p><strong>Specifications</strong><br>
+          Size: F4 (21cm x 33cm)<br>
+          Paper Type: Simili 60 gsm<br>
+          Pages: 736<br>
+          Cover: Hardcover / Art Paper 130 gsm<br>
+          Colour: 4 Colour CMYK<br>
+          Finishing: Matt Lamination / Ribbon / Hot Stamping / Spot UV</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 2 COVER: VISUAL IDENTITY ========== -->
+  <section class="project-cover" id="visual-identity">
+    <h2>Visual Identity</h2>
+  </section>
+
+  <section class="project">
+    <div class="section-inner">
+      <div class="identity-grid">
+        <div class="identity-card">
+          <h3>RUMA.BREW</h3>
+          <p><strong>RUMA.BREW</strong> - was built from a simple idea — good coffee, a calming atmosphere, and a space
+            that feels like home. We believe coffee doesn't have to be expensive or exclusive to be enjoyed. Here, it's
+            all about making moments, easy conversations, and the kind of comfort that makes people want to stay a
+            little longer.</p>
+          <p>More than just a coffee spot, ruma.brew is a place to pause from the outside world — serving approachable
+            coffee, warm surroundings, and a relaxed vibe for everyone.</p>
+          <p>Date: 2026</p>
+        </div>
+        <div>
+          <img src="images/projects/ruma-brew/branding-mockup.png" alt="Ruma.brew brand identity design">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project">
+    <div class="section-inner">
+      <div class="identity-grid">
+        <div class="identity-card">
+          <h3>MDM ENTERPRISE</h3>
+          <p><strong>MDM ENTERPRISE</strong> - The logo for MDM Enterprise features a modern typographic integration
+            where the letters 'M', 'D', and 'M' flow seamlessly into a single, cohesive emblem. The strong structural
+            lines represent reliability and growth, while the corporate blue and charcoal gray color palette gives the
+            brand a professional, trustworthy, and established identity.</p>
+          <p>Date: 2025</p>
+        </div>
+        <div>
+          <img src="images/projects/mdm-enterprise/branding-mockup.png" alt="MDM Enterprise brand identity design">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 3 COVER: SOCIAL MEDIA ========== -->
+  <section class="project-cover" id="social-media">
+    <h2>Social Media AND MARKETING VISUAL</h2>
+  </section>
+
+  <!-- ========== THANKS ========== -->
+  <section class="thanks">
+    <h1 class="hero-title" style="font-size: clamp(2.5rem, 8vw, 5rem);">THANK<span class="accent">S</span>.</h1>
+  </section>
+
+  <!-- ========== CONNECT / CONTACT ========== -->
+  <section class="connect" id="contact">
+    <div class="section-inner connect-grid">
+      <div>
+        <h2>Let's Connect</h2>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> fhmxvisuals@gmail.com</li>
+          <li><strong>Behance:</strong> behance.net/fahimsuhaimi</li>
+          <li><strong>LinkedIn:</strong> linkedin.com/in/fahim-suhaimi</li>
+        </ul>
+      </div>
+      <div class="qr-block">
+        <p class="qr-label">Scan to Watch!</p>
+        <img src="images/contact/qr-code.png" alt="QR code to KONFLEK shortfilm">
+        <p>KONFLEK shortfilm</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Fahim Suhaimi. All rights reserved.
+  </footer>
+
+  <!-- FLOATING QUICK-EMAIL CHAT BUTTON (BOTTOM RIGHT) -->
+  <a href="mailto:fhmxvisuals@gmail.com?subject=Hello%20Fahim&body=Hi%20Fahim%2C%20I%27d%20like%20to%20get%20in%20touch..."
+    class="chat-fab" aria-label="Quick Email Me" title="Quick Email Me">
+    ✉
+  </a>
+
+</body>
+
 </html>
-
